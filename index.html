@@ -1,624 +1,984 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>MoleCode - The Multi-Purpose Responsive HTML5 Template</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- site icons -->
-      <link rel="icon" href="images/fevicon/fevicon.png" type="image/png" />
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css" />
-      <!-- site css -->
-      <link rel="stylesheet" href="css/style.css" />
-      <!-- responsive css -->
-      <link rel="stylesheet" href="css/responsive.css" />
-      <!-- colors css -->
-      <link rel="stylesheet" href="css/colors.css" />
-      <!-- wow animation css -->
-      <link rel="stylesheet" href="css/animate.css" />
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-      <style>
+<html lang="es">
 
-         @media (max-width: 768px) {
-            .img-responsive-hide {
-               display: none !important;
-            }
-            .cont_theme_blog {
-               width: 100% !important;
-            }
-         }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-         .footer-tech-icons {
-            position: relative;
-            width: 100%;
-            height: 150px;
-            overflow: hidden;
-         }
+    <title>MOLE-CODE | Desarrollo de Software a la Medida</title>
 
-         .footer-tech-icons li {
-            position: absolute;
-            list-style: none;
-         }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-         .tech-icon {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-         }
-      </style>
-   </head>
-   <body id="default_theme" class="home_page1">
-      <!-- header -->
-      <header class="header header_style1">
-         <div class="container">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/new.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" height="55">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-contacto">
+                            Contactar
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1>
+                        Desarrollamos software a la medida para impulsar tu negocio
+                    </h1>
+
+                    <p>
+
+                        Aplicaciones web, móviles y sistemas empresariales diseñados para optimizar procesos y acelerar
+                        el crecimiento de tu empresa.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a class="btn btn-primary-custom" href="#contacto">
+                            Solicitar consulta
+                        </a>
+
+                        <a class="btn btn-outline-custom" href="proyectos.html">
+                            Ver proyectos
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img src="images/dos/hero.jpg" class="img-fluid hero-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ESTADISTICAS -->
+    <section class="stats">
+
+        <div class="container">
+
             <div class="row">
-               <div class="col-md-9 col-lg-10">
-                  <div class="logo"><a href="index.html"><img src="images/icons/logonuevo.png" alt="molecode" /></a></div>
-                  <div class="main_menu float-right">
-                     <div class="menu">
-                        <ul class="clearfix">
-                           <li class="active"><a href="index.html">Inicio</a></li>
-                           <li><a href="#porque">¿Por qué elegirnos?</a></li>
-                           <li><a href="#servicios">Servicios</a></li>
-                           <li><a href="#proyectos">Proyectos</a></li>
-                           <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-3 col-lg-2">
-                  <div class="right_bt"><a class="bt_main" href="index.html">Soporte</a> </div>
-               </div>
-            </div>
-         </div>
-      </header>
-      <section id="banner_parallax" class="slide_banner1">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="full">
-                     <div class="slide_cont">
-                        <h2>Soluciones únicas para necesidades únicas</h2>
-                        <p>En un mundo donde la tecnología avanza constantemente, tener un socio estratégico es más crucial que nunca. Mole-Code te ayuda a estar a la vanguardia...!</p>
-<!--                        <div class="full slide_bt"> <a class="white_bt bt_main" href="index.html">Download</a> </div>-->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="full">
-                     <div class="slide_pc_img wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s"> <img src="images/banner.png" alt="#" /> </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end header -->
-      <!-- section -->
-      <section id="sobre-nosotros" class="layout_padding layer_style">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="full text_align_center">
-                     <div class="heading_main center_head_border heading_style_1">
-                        <h2>Sobre <span>Nosotros</span></h2>
-                     </div>
-                     <p>
-                        En Mole-Code creemos en la innovación, la seguridad y la adaptabilidad como pilares fundamentales.
-                        Nuestro equipo de expertos combina experiencia y pasión por la tecnología para ayudarte a estar siempre a la vanguardia digital.
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-               <div class="col-md-10">
-                  <div class="video-container" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.3);">
-                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L08tn8RvYWY"
-                             title="Video de presentación Mole-Code"
-                             frameborder="0"
-                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                             allowfullscreen
-                             style="position:absolute; top:0; left:0; width:100%; height:100%;">
-                     </iframe>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end section -->
-       <!-- section -->
-      <section id="porque">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="full text_align_center">
-                     <div class="heading_main center_head_border heading_style_1">
-                        <h2>¿Por qué <span>Elegirnos?</span></h2>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row step_section">
-               <div class="offset-xl-1 col-xl-10 col-md-12">
-                  <div class="row d-flex justify-content-center" >
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="step_blog">
-                           <div class="step_inner">
-                              <img width="120" height="120" src="images/icons/laptop-shield-alt-svgrepo-com.svg" alt="customer-insight--v1"/>
-                              <p>Seguridad</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="step_blog arrow_right_step">
-                           <div class="step_inner">
-                              <img width="120" height="120"src="images/icons/award-alt-svgrepo-comgreen.svg" alt="Descripción del SVG">
-                              <p>Experiencia</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="step_blog">
-                           <div class="step_inner">
-                              <img width="120" height="120" src="images/icons/handshake-svgrepo-com.svg" alt="customer-insight--v1"/>
-                              <p>Compromiso</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="step_blog">
-                           <div class="step_inner">
-                              <img width="120" height="120" src="images/icons/code-svgrepo-com.svg" alt="customer-insight--v1"/>
-                              <p>Pasión por la Tecnología</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end section -->
-      <!-- section -->
-      <section id="servicios" class="layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="full text_align_center">
-                     <div class="heading_main center_head_border heading_style_1">
-                        <h2>Servicios</h2>
-                     </div>
-                  </div>
-               </div>
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h2>+20</h2>
+
+                        <p>Proyectos</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h2>24/7</h2>
+
+                        <p>Soporte</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h2>100%</h2>
+
+                        <p>Personalizado</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h2>+5</h2>
+
+                        <p>Años de experiencia</p>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- Bloque 1 -->
-            <div class="row margin_bottom_30">
-               <div class="col-md-6 cont_theme_blog">
-                  <div class="full">
-                     <h3>Desarrollo de software a la medida</h3>
-                     <p id="titulo-desarrollo-medida"><strong>Tu negocio es único, y tu software también debería serlo.</strong></p>
-                     <p>
-                        En <strong>MOLE-CODE</strong> diseñamos soluciones digitales exclusivas que
-                        se adaptan a tus procesos, no al revés.
-                     </p>
-                     <ul>
-                        <li>- Herramientas que crecen junto a tu empresa.</li>
-                        <li>- Mayor seguridad y control sobre tus datos.</li>
-                        <li>- Integración perfecta con tus sistemas actuales.</li>
-                        <li>- Una ventaja competitiva que marca la diferencia.</li>
-                     </ul>
-                     <p>
-                        Transforma tus ideas en tecnología y lleva tu empresa al siguiente nivel.
-                     </p>
-                     <div class="imf_read">
-                        <a href="#!" onclick="openModal('modal5'); return false;" aria-haspopup="dialog">Leer más</a>
-                     </div>
-                  </div>
-               </div>
+        </div>
 
-               <div class="col-md-6 wow fadeInRight img-responsive-hide" data-wow-delay="0.5" data-wow-duration="1s">
-                  <div class="full">
-                     <div class="center">
-                        <img width="460" height="460" src="images/icons/laptop-check-alt-svgrepo-com.svg" alt="#" />
-                     </div>
-                  </div>
-               </div>
+    </section>
+    <!-- POR QUE ELEGIRNOS -->
+    <section class="why-us">
+
+        <div class="container">
+
+            <div class="title-section">
+
+                <h2>
+
+                    ¿Por qué elegir <span>MOLE-CODE?</span>
+
+                </h2>
+
             </div>
 
-            <!-- Bloque 2 -->
-            <div class="row margin_bottom_30">
-               <div class="col-md-6 wow fadeInLeft img-responsive-hide" data-wow-delay="0.5" data-wow-duration="1s">
-                  <div class="full">
-                     <div class="center">
-                        <img width="460" height="460" src="images/icons/chart-mixed-svgrepo-com.svg" alt="#" />
-                     </div>
-                  </div>
-               </div>
 
-               <div class="col-md-6 cont_theme_blog">
-                  <div class="full">
-                     <h3>Soporte de aplicaciones desarrolladas</h3>
-                     <p>¿Tienes una aplicación que necesita mantenimiento o mejoras?</p>
-                     <p>
-                        En <strong>MOLE-CODE</strong> ofrecemos soporte especializado tanto para
-                        aplicaciones creadas por nosotros como para las desarrolladas por terceros.
-                     </p>
-                     <ul>
-                        <li>Corrección de errores y optimización del rendimiento.</li>
-                        <li>Actualizaciones y mejoras evolutivas.</li>
-                        <li>Soporte técnico rápido y confiable.</li>
-                        <li>Adaptación a nuevas tecnologías y sistemas.</li>
-                     </ul>
-                     <p>
-                        No importa quién desarrolló tu software: nosotros te ayudamos a mantenerlo
-                        seguro, actualizado y funcionando al <strong>100%</strong>.
-                     </p>
-                  </div>
-               </div>
-            </div>
-
-            <!-- Bloque 3 -->
-            <div class="row margin_bottom_30">
-               <div class="col-md-6 cont_theme_blog">
-                  <div class="full">
-                     <h3>Consultorías especializadas</h3>
-                     <p>En un mundo digital en constante cambio, contar con la guía adecuada puede marcar la diferencia.</p>
-                     <p>
-                        En <strong>MOLE-CODE</strong> ofrecemos <strong>consultorías especializadas</strong>
-                        para ayudarte a tomar decisiones estratégicas en tecnología y transformar tus ideas
-                        en soluciones reales.
-                     </p>
-                     <ul>
-                        <li>- Asesoría experta en desarrollo de software y transformación digital.</li>
-                        <li>- Evaluación de procesos y propuestas de mejora.</li>
-                        <li>- Orientación en integración de nuevas tecnologías.</li>
-                        <li>- Estrategias para optimizar costos y aumentar la eficiencia.</li>
-                     </ul>
-                     <p><strong>Tu visión, respaldada por experiencia.</strong></p>
-                  </div>
-               </div>
-
-               <div class="col-md-6 wow fadeInRight img-responsive-hide" data-wow-delay="0.5" data-wow-duration="1s">
-                  <div class="full">
-                     <div class="center">
-                        <img width="460" height="460" src="images/icons/screen-users-svgrepo-com.svg" alt="#" />
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- end section -->
-      <!-- section -->
-      <section id="proyectos" class="layout_padding gradiant_bg cross_layout">
-         <div class="container">
             <div class="row">
-               <div class="col-sm-12">
-                  <div class="full text_align_center white_fonts">
-                     <div class="heading_main center_head_border heading_style_1">
-                        <h2>Proyectos asociados</h2>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="information_blogs">
-                     <div class="imf_icon"><img src="images/icons/favicon_solved.png" alt="#" /></div>
-                     <div class="imf_head">
-                        <h3>Solved - Promoter</h3>
-                     </div>
-                     <div class="imf_cont">
-                        <p>Software especializado en gestión y promoción de promotores de ventas.</p>
-                     </div>
-                     <div class="imf_read"><a href="#" id="openModal" onclick="openModal('modal1'); return false;"  aria-haspopup="dialog">Leer más</a></div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="information_blogs">
-                     <div class="imf_icon"><img src="images/icons/favicon_solved.png" alt="#" /></div>
-                     <div class="imf_head">
-                        <h3>Solved - Facturación</h3>
-                     </div>
-                     <div class="imf_cont">
-                        <p>Software especializado en control de producción, distribución y ventas.</p>
-                     </div>
-                     <div class="imf_read"><a href="#!" onclick="openModal('modal2'); return false;" aria-haspopup="dialog">Leer más</a></div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="information_blogs">
-                     <div class="imf_icon"><img src="images/icons/mamey-mensajero.png" alt="#" /></div>
-                     <div class="imf_head">
-                        <h3>Apk Mamey mensajero</h3>
-                     </div>
-                     <div class="imf_cont">
-                        <p>Aplicación especializada en entregas eficientes de productos.</p>
-                     </div>
-                     <div class="imf_read"> <a href="#!" onclick="openModal('modal3'); return false;" aria-haspopup="dialog">Leer más</a></div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="information_blogs">
-                     <div class="imf_icon"><img src="images/icons/mamey-promotor.png" alt="#" /></div>
-                     <div class="imf_head">
-                        <h3>Apk Mamey promotor</h3>
-                     </div>
-                     <div class="imf_cont">
-                        <p>Aplicación diseñada para que los promotores gestionen sus ventas y conozcan la disponibilidad de productos.</p>
-                     </div>
-                     <div class="imf_read"><a href="#!" onclick="openModal('modal4'); return false;" aria-haspopup="dialog">Leer más</a></div>
-                  </div>
-               </div>
-               
-            </div>
-         </div>
-      </section>
-      <!-- end section -->
-      <!-- footer -->
-      <footer class="footer_style_2">
-         <div class="footer_top">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 margin_bottom_30">
-                     <div class="footer_blog_2">
-                        <h3>Siempre para usted</h3>
-                     </div>
-<!--                     <div class="full width_9" style="margin-bottom:25px;"> <a href="index.html"><img class="img-responsive" width="250" src="images/icons/logonuevo.png" alt="molecode"></a> </div>-->
-                     <div class="full width_9">
+
+
+                <div class="col-md-3">
+
+                    <div class="why-card">
+
+                        <i class="fa fa-shield-halved"></i>
+
+                        <h4>Seguridad</h4>
+
                         <p>
-                           <strong>MOLE-CODE</strong> es una empresa de tecnología especializada en desarrollar soluciones digitales a la medida.
+
+                            Desarrollamos soluciones robustas y confiables.
+
                         </p>
-                     </div>
-                     <div class="full width_9">
-                        <p>Ofrecemos servicios de desarrollo de software, consultoría, soporte y aplicaciones móviles para que tu negocio
-                           crezca de manera eficiente e innovadora.</p>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
-                     <div class="full">
-                        <div class="footer_blog_2 width_9">
-                           <center>     <h3>Nuestros Contactos</h3>
-                           <p>
-                           <div class="imf_read"> <a href=" https://wa.me/message/SZN6IWBFI5FYJ1"  aria-haspopup="dialog"><i class="fa fa-whatsapp"></i> WhatsApp :+52 1 998 480 4149 </a></div>
-                           </p></center>
-                           <center><p><img width="185" height="150" src="images/WhatsApp.jpg">
-                           </p></center>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
-                     <div class="full">
-                        <center>       <div class="footer_blog_2">
-                           <h3>Algunas Tecnologías</h3>
-                        </div>
-                        <div class="full" style="position: relative; height: 150px; overflow: hidden;">
-                           <ul class="footer-tech-icons" style="position: relative; width: 100%; height: 150px; list-style: none; padding:0; margin:0;">
-                              <!-- HTML5 -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/html5.png" alt="HTML5"></li>
-                              <!-- CSS3 -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/css3.png" alt="CSS3"></li>
-                              <!-- JavaScript -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/javascript.png" alt="JavaScript"></li>
-                              <!-- Python -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/python.png" alt="Python"></li>
-                              <!-- PHP -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/php.png" alt="PHP"></li>
-                              <!-- Laravel -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/laravel.png" alt="Laravel"></li>
-                              <!-- CakePHP -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/cakephp.png" alt="CakePHP"></li>
-                              <!-- ChatGPT -->
-                              <li><img class="tech-icon" width="40" height="40" src="images/chatgpt.png" alt="ChatGPT"></li>
-                           </ul>
-                        </div>
-                           </center>
-                     </div>
-                  </div>
-               </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-3">
+
+                    <div class="why-card">
+
+                        <i class="fa fa-award"></i>
+
+                        <h4>Experiencia</h4>
+
+                        <p>
+
+                            Conocimiento y compromiso en cada proyecto.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-3">
+
+                    <div class="why-card">
+
+                        <i class="fa fa-users"></i>
+
+                        <h4>Compromiso</h4>
+
+                        <p>
+
+                            Acompañamiento durante todo el proceso.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-3">
+
+                    <div class="why-card">
+
+                        <i class="fa fa-code"></i>
+
+                        <h4>Tecnología</h4>
+
+                        <p>
+
+                            Herramientas modernas para empresas modernas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
-         </div>
-         <!-- footer bottom -->
-         <div class="footer_bottom">
-            <p>2025 | <strong>MoleCode</strong></p>
-         </div>
-      </footer>
-      <!-- end footer -->
 
-      <!-- Modal -->
-      <div id="modal1" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; ;z-index: 9999;">
-         <div style="background:#fff; padding:20px; max-width:600px; width:90%; border-radius:8px; position:relative;">
-            <h4 id="modalTitle">Solvet Promoter</h4>
-            <p><strong>Solvet Promoter</strong> está diseñado para ayudar a las empresas a controlar, organizar y supervisar el trabajo de sus promotores, quienes se encargan de impulsar la venta de productos.</p>
-            <p>La <strong>empresa principal</strong> (proveedora de los productos) puede:</p>
-            <ul>
-               <li>Registrar y administrar a sus promotores.</li>
-               <li>Asignar productos y metas de ventas.</li>
-               <li>Monitorear en tiempo real el desempeño de cada promotor.</li>
-               <li>Generar reportes claros para la toma de decisiones.</li>
-            </ul>
-            <p>Mientras tanto, los <strong>promotores</strong> disponen de una herramienta ágil para gestionar sus ventas, dar seguimiento a clientes y reportar resultados de forma sencilla.</p>
-            <p><strong>Solvet Promoter conecta la estrategia de la empresa con la acción en el campo, garantizando control, eficiencia y mejores resultados.</strong></p>
+        </div>
 
-            <a href="#" onclick="closeModal('modal1'); return false;" style="position:absolute; top:10px; right:10px;">&times; Cerrar</a>
-         </div>
-      </div>
-      <!-- Modal -->
-      <div id="modal2" role="dialog" aria-modal="true" aria-labelledby="modalTitle2" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
-         <div style="background:#fff; padding:20px; max-width:600px; width:90%; border-radius:8px; position:relative;">
-            <h4 id="modalTitle2">Solved - Facturación</h4>
-            <p><strong>Solved - Facturación</strong> es un software diseñado para controlar la producción de productos y su envío a los almacenes de la empresa, garantizando un manejo eficiente de inventarios y distribución.</p>
-            <p>Con este sistema, la empresa puede:</p>
-            <ul>
-               <li>Controlar la producción y disponibilidad de productos.</li>
-               <li>Gestionar el envío de productos a diferentes almacenes.</li>
-               <li>Supervisar la distribución y venta en los puntos de venta asociados a cada almacén.</li>
-               <li>Generar reportes precisos para la toma de decisiones sobre inventario y ventas.</li>
-            </ul>
-            <p><strong>Solved - Facturación asegura que cada producto llegue al lugar correcto y que las ventas se gestionen de manera eficiente.</strong></p>
+    </section>
+    <section id="servicios" class="services">
 
-            <a href="#!" onclick="closeModal('modal2'); return false;" style="position:absolute; top:10px; right:10px;">&times; Cerrar</a>
-         </div>
-      </div>
-      <!-- Modal -->
-      <div id="modal3" role="dialog" aria-modal="true" aria-labelledby="modalTitle3" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
-         <div style="background:#fff; padding:20px; max-width:600px; width:90%; border-radius:8px; position:relative;">
-            <h4 id="modalTitle3">Apk Mamey Mensajero</h4>
-            <p><strong>Apk Mamey Mensajero</strong> es una aplicación diseñada para el uso de los mensajeros, asegurando que la entrega de productos vendidos por los promotores sea rápida, eficiente y confiable.</p>
-            <p>Con esta aplicación, los mensajeros pueden:</p>
-            <ul>
-               <li>Recibir de manera organizada los pedidos de los promotores.</li>
-               <li>Planificar rutas eficientes para cada entrega.</li>
-               <li>Registrar entregas y gestionar incidencias en tiempo real.</li>
-               <li>Garantizar que los productos lleguen correctamente a su destino.</li>
-            </ul>
-            <p><strong>Apk Mamey Mensajero asegura la conectividad entre promotores, mensajeros y clientes, optimizando la logística de ventas.</strong></p>
+        <div class="container">
 
-            <a href="#!" onclick="closeModal('modal3'); return false;" style="position:absolute; top:10px; right:10px;">&times; Cerrar</a>
-         </div>
-      </div>
-      <!-- Modal -->
-      <div id="modal4" role="dialog" aria-modal="true" aria-labelledby="modalTitle4" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
-         <div style="background:#fff; padding:20px; max-width:600px; width:90%; border-radius:8px; position:relative;">
-            <h4 id="modalTitle4">Apk Mamey Promotor</h4>
-            <p><strong>Apk Mamey Promotor</strong> es una aplicación diseñada para que los promotores conozcan los productos disponibles, puedan registrar ventas y coordinar con el administrador para que los mensajeros realicen las entregas.</p>
-            <p>Con esta aplicación, los promotores pueden:</p>
-            <ul>
-               <li>Consultar el inventario de productos en existencia.</li>
-               <li>Registrar y crear ventas directamente desde la aplicación.</li>
-               <li>Coordinar con el administrador la preparación de pedidos.</li>
-               <li>Garantizar que los productos vendidos lleguen correctamente a los clientes a través de los mensajeros.</li>
-            </ul>
-            <p><strong>Apk Mamey Promotor asegura un flujo de ventas organizado, eficiente y transparente entre promotores, administración y mensajeros.</strong></p>
+            <div class="title-section">
 
-            <a href="#!" onclick="closeModal('modal4');return false;" style="position:absolute; top:10px; right:10px;">&times; Cerrar</a>
-         </div>
-      </div>
-      <!-- Modal -->
-      <div id="modal5" role="dialog" aria-modal="true" aria-labelledby="modalTitle4" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
-         <div style="background:#fff; padding:20px; max-width:600px; width:90%; border-radius:8px; position:relative;">
-            <h4 id="modalTitle4">Desarrollo de software a la medida</h4>
-            <p>En un entorno empresarial donde cada organización enfrenta retos y procesos únicos, el software genérico muchas veces se queda corto. Aquí es donde entra el desarrollo de software a la medida: soluciones diseñadas específicamente para tu negocio, creadas pensando en tus objetivos, tu equipo y tu manera de trabajar.</p>
-            <p> Nuestro enfoque se centra en entender a profundidad las necesidades de tu empresa para luego transformarlas en herramientas digitales que optimicen procesos, reduzcan costos y aumenten la productividad. No se trata solo de programar, sino de construir sistemas que evolucionen contigo y que se integren de manera natural con las tecnologías que ya utilizas.</p>
-            <h5>Beneficios del software a la medida::</h5>
-            <ul>
-               <li><strong>Adaptabilidad total: </strong> se ajusta a los flujos de trabajo de tu organización en lugar de que tu empresa tenga que adaptarse a una herramienta predefinida.</li>
-               <li><strong>Escalabilidad: </strong> crece al mismo ritmo que tu negocio, permitiendo incorporar nuevas funcionalidades cuando lo necesites.</li>
-               <li><strong>Integración fluida: </strong>conecta con otras aplicaciones o sistemas que ya usas, facilitando la comunicación entre distintas áreas de la empresa.</li>
-               <li><strong>Ventaja competitiva:</strong> contar con una herramienta única y diferenciadora puede marcar la diferencia frente a la competencia.</li>
-            </ul>
-            <p>En MOLE-CODE creemos que el software debe ser un aliado estratégico. Por eso, trabajamos con metodologías ágiles, asegurando entregas rápidas, flexibles y de alta calidad, con la participación constante de nuestros clientes en cada etapa del desarrollo.</p>
-            <p>Ya sea que necesites un sistema de gestión interna, una aplicación web o una solución móvil especializada, estamos listos para ayudarte a convertir tus ideas en tecnología que impulse el crecimiento de tu empresa.</p>
-            <p><strong>Soluciones únicas para necesidades únicas.</strong></p>
+                <h2>Nuestros <span>Servicios</span></h2>
 
-            <a href="#!" onclick="closeModal('modal5');return false;" style="position:absolute; top:10px; right:10px;">&times; Cerrar</a>
-         </div>
-      </div>
+                <p>
+                    Soluciones tecnológicas diseñadas para impulsar el crecimiento de tu empresa.
+                </p>
 
-      <!--=========== js section ===========-->
-      <!-- jQuery (necessary for Bootstrap's JavaScript) -->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <!-- wow animation -->
-      <script src="js/wow.js"></script>
-      <!-- custom js -->
-      <script src="js/custom.js"></script>
-      <!-- google map js -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-      <!-- end google map js -->
-      <!-- Script para abrir/cerrar modal -->
-      <script>
-         function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if(modal) modal.style.display = 'flex';
-         }
+            </div>
 
-         function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if(modal) modal.style.display = 'none';
-         }
+            <div class="row">
 
-         // Cerrar modal al hacer clic fuera del contenido
-         window.addEventListener('click', (e) => {
-            const modals = document.querySelectorAll('[role="dialog"]');
-            modals.forEach(modal => {
-               if(e.target === modal) modal.style.display = 'none';
-            });
-         });
+                <div class="col-lg-4 mb-4">
 
-         document.addEventListener("DOMContentLoaded", () => {
-            const icons = document.querySelectorAll('.tech-icon');
-            const container = document.querySelector('.footer-tech-icons');
-            const containerWidth = container.offsetWidth;
-            const containerHeight = container.offsetHeight;
+                    <div class="service-card">
 
-            // Inicializa posiciones y direcciones aleatorias
-            const iconData = Array.from(icons).map(icon => {
-               icon.style.position = 'absolute';
-               const left = Math.random() * (containerWidth - 40);
-               const top = Math.random() * (containerHeight - 40);
-               icon.style.left = left + 'px';
-               icon.style.top = top + 'px';
+                        <div class="service-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
 
-               return {
-                  el: icon,
-                  x: left,
-                  y: top,
-                  dx: (Math.random() - 0.5) * 2, // velocidad horizontal
-                  dy: (Math.random() - 0.5) * 2  // velocidad vertical
-               };
-            });
+                        <h3>Desarrollo Web</h3>
 
-            function moveIcons() {
-               iconData.forEach(icon => {
-                  // Actualiza posición
-                  icon.x += icon.dx;
-                  icon.y += icon.dy;
+                        <p>
+                            Sistemas empresariales, CRM, ERP y aplicaciones web adaptadas a las necesidades de tu
+                            negocio.
+                        </p>
 
-                  // Rebote en los límites del contenedor
-                  if(icon.x <= 0 || icon.x >= containerWidth - 40) icon.dx *= -1;
-                  if(icon.y <= 0 || icon.y >= containerHeight - 40) icon.dy *= -1;
+                    </div>
 
-                  // Aplica posición
-                  icon.el.style.left = icon.x + 'px';
-                  icon.el.style.top = icon.y + 'px';
-               });
+                </div>
 
-               requestAnimationFrame(moveIcons); // movimiento suave y continuo
+                <div class="col-lg-4 mb-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <h3>Aplicaciones Móviles</h3>
+
+                        <p>
+                            Desarrollo de aplicaciones Android y soluciones multiplataforma para aumentar la
+                            productividad.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 mb-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h3>Soporte y Mantenimiento</h3>
+
+                        <p>
+                            Mantenimiento de software propio o de terceros para garantizar estabilidad y seguridad.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 mb-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h3>Consultoría Tecnológica</h3>
+
+                        <p>
+                            Te ayudamos a tomar decisiones estratégicas y acelerar la transformación digital.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 mb-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+
+                        <h3>Tiendas Online</h3>
+
+                        <p>
+                            Comercio electrónico con integración de pagos y administración de productos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 mb-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+
+                        <h3>Integraciones y APIs</h3>
+
+                        <p>
+                            Automatización y conexión con servicios externos para optimizar procesos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="technologies">
+
+        <div class="container">
+
+            <div class="title-section">
+
+                <h2>Tecnologías que <span>Utilizamos</span></h2>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/html5.png" class="img-fluid">
+                        <h5>HTML5</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/css3.png" class="img-fluid">
+                        <h5>CSS3</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/javascript.png" class="img-fluid">
+                        <h5>JavaScript</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/php.png" class="img-fluid">
+                        <h5>PHP</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/python.png" class="img-fluid">
+                        <h5>Python</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/laravel.png" class="img-fluid">
+                        <h5>Laravel</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/cakephp.png" class="img-fluid">
+                        <h5>CakePHP</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-6 mb-4">
+
+                    <div class="tech-card">
+                        <img src="images/chatgpt.png" class="img-fluid">
+                        <h5>IA y Automatización</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="proyectos" class="projects">
+
+        <div class="container">
+
+            <div class="title-section">
+
+                <h2>Nuestros <span>Proyectos</span></h2>
+
+                <p>
+                    Soluciones desarrolladas para distintos sectores y necesidades empresariales.
+                </p>
+
+            </div>
+
+            <div class="row">
+
+                <!-- Proyecto 4: Mi Pokemon -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div id="carouselPokemonHome" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselPokemonHome" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselPokemonHome" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/pokemon1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Mi Pokemon - Intercambio y Consulta de Cartas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/Pokemon2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Mi Pokemon - Panel de Venta de Cartas Coleccionables">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselPokemonHome" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselPokemonHome" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                        <div class="project-content">
+                            <h4>Mi Pokemon</h4>
+                            <p>
+                                Plataforma de intercambio, venta y cotización de cartas Pokémon en tiempo real.
+                            </p>
+                            <ul>
+                                <li>✓ Cotización del mercado en vivo</li>
+                                <li>✓ Compra, venta e intercambio seguro</li>
+                                <li>✓ Desarrollado en CakePHP, MySQL y Vue.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-lg-4 mb-4">
+
+                    <div class="project-card">
+
+                        <div id="carouselFacturacionHome" class="carousel slide" data-ride="carousel"
+                            data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselFacturacionHome" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselFacturacionHome" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/facturacion1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Solved Facturación - Alta y Gestión de Productos en Almacén">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/facturacion2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Solved Facturación - Registro de Ventas y Facturación">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselFacturacionHome" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselFacturacionHome" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h4>Solved Facturación</h4>
+
+                            <p>
+
+                                Producción, inventario, distribución y control de ventas.
+
+                            </p>
+
+                            <ul>
+
+                                <li>✓ Inventarios</li>
+
+                                <li>✓ Producción</li>
+
+                                <li>✓ Distribución</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Proyecto 3 -->
+                <div class="col-lg-4 mb-4">
+
+                    <div class="project-card">
+
+                        <div id="carouselMameyHome" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselMameyHome" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselMameyHome" data-slide-to="1"></li>
+                                <li data-target="#carouselMameyHome" data-slide-to="2"></li>
+                                <li data-target="#carouselMameyHome" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/mamey1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Casillero Virtual Express de Envíos">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/mamey2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Envío de Paquetería y Cálculo de Costos">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/mamey3.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Panel para Agregar Reservas y Aduana">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/mamey4.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Listado y Tabla Control de Reservas">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselMameyHome" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselMameyHome" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h4>Aplicaciones Mamey</h4>
+
+                            <p>
+
+                                Ecosistema de control logístico internacional para traslados de mercancías y reportes
+                                aduanales.
+
+                            </p>
+
+                            <ul>
+
+                                <li>✓ Rastreo y control de paquetes</li>
+
+                                <li>✓ Estados de envío en tiempo real</li>
+
+                                <li>✓ Reportes entregables para aduanas</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="proyectos.html" class="btn btn-primary-custom">
+                        Ver catálogo completo
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="nosotros" class="about">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img src="images/dos/team.jpg" class="img-fluid about-image">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <h2>
+
+                        Sobre <span>MOLE-CODE</span>
+
+                    </h2>
+
+                    <p>
+
+                        Somos una empresa dedicada al desarrollo de software a la medida,
+                        aplicaciones móviles y consultoría tecnológica.
+
+                    </p>
+
+                    <p>
+
+                        Nuestro objetivo es proporcionar soluciones innovadoras que ayuden
+                        a las empresas a optimizar procesos y crecer mediante la tecnología.
+
+                    </p>
+
+                    <div class="about-list">
+
+                        <p>✓ Desarrollo personalizado</p>
+
+                        <p>✓ Soporte continuo</p>
+
+                        <p>✓ Tecnologías modernas</p>
+
+                        <p>✓ Soluciones escalables</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="video-section">
+
+        <div class="container">
+
+            <div class="title-section">
+
+                <h2>Conoce más sobre <span>Nosotros</span></h2>
+
+            </div>
+
+            <div class="video-container">
+
+                <iframe src="https://www.youtube.com/embed/L08tn8RvYWY" allowfullscreen>
+
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contacto" class="contact-section">
+
+        <div class="container">
+
+            <div class="title-section">
+
+                <h2>Hablemos de tu <span>Proyecto</span></h2>
+
+                <p>
+                    Estamos listos para ayudarte a convertir tus ideas en soluciones tecnológicas.
+                </p>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="contact-card">
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4">
+
+                                    <input type="text" class="form-control custom-input" placeholder="Nombre">
+
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                    <input type="email" class="form-control custom-input"
+                                        placeholder="Correo electrónico">
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <input type="text" class="form-control custom-input" placeholder="Empresa">
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <textarea class="form-control custom-input" rows="6"
+                                    placeholder="Cuéntanos sobre tu proyecto"></textarea>
+
+                            </div>
+
+                            <button class="btn-send">
+
+                                Enviar mensaje
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Bootstrap and jQuery core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+
+    <script>
+        new WOW().init();
+
+        window.addEventListener("scroll", function () {
+
+            let navbar = document.querySelector(".custom-navbar");
+
+            if (window.scrollY > 80) {
+
+                navbar.classList.add("scrolled");
+
+            }
+            else {
+
+                navbar.classList.remove("scrolled");
+
             }
 
-            moveIcons();
+        });
 
-            // Cambiar dirección aleatoria al pasar el mouse
-            iconData.forEach(icon => {
-               icon.el.addEventListener('mouseenter', () => {
-                  icon.dx = (Math.random() - 0.5) * 3;
-                  icon.dy = (Math.random() - 0.5) * 3;
-                  icon.el.style.transform = 'scale(1.2) rotate(' + (Math.random()*360) + 'deg)';
-               });
-               icon.el.addEventListener('mouseleave', () => {
-                  icon.el.style.transform = 'scale(1) rotate(0deg)';
-               });
+        // Lógica interactiva para ampliar imágenes (Lightbox)
+        const lightboxModal = $('#imageLightboxModal');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+
+        document.querySelectorAll('.project-carousel-img').forEach(img => {
+            img.addEventListener('click', function () {
+                const src = this.getAttribute('src');
+                const alt = this.getAttribute('alt');
+                lightboxImage.setAttribute('src', src);
+                lightboxCaption.textContent = alt;
+                lightboxModal.modal('show');
             });
-         });
+        });
+    </script>
 
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="imageLightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+                <div class="modal-header" style="border: none; padding: 0;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        style="color: white; font-size: 35px; opacity: 0.8; position: absolute; right: 10px; top: -45px; z-index: 9999; border: none; background: transparent; cursor: pointer;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img id="lightboxImage" src="" class="img-fluid"
+                        style="max-height: 80vh; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); background-color: white; padding: 5px;">
+                    <div id="lightboxCaption" class="text-white mt-3 font-weight-medium"
+                        style="text-shadow: 0 2px 4px rgba(0,0,0,0.8); font-size: 16px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+<footer class="footer">
 
-      </script>
-   </body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <h4>MOLE-CODE</h4>
+
+                <p>
+
+                    Soluciones tecnológicas para empresas modernas.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h4>Contacto</h4>
+                <a href="https://wa.me/529984804149" target="_blank" class="whatsapp-button">
+
+                    <i class="fab fa-whatsapp"></i>
+
+                </a>
+                <p>
+
+                    <i class="fa fa-whatsapp"></i>
+
+                    +52 998 480 4149
+
+                </p>
+
+                <p>
+
+                    <i class="fa fa-envelope"></i>
+
+                    contacto@mole-code.com
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h4>Tecnologías</h4>
+
+                <p>
+
+                    PHP · Python · JavaScript · Laravel · CakePHP
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            © 2026 MOLE-CODE. Todos los derechos reservados.
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
 </html>

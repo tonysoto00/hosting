@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Catálogo de Proyectos | MOLE-CODE</title>
+    <meta name="description"
+        content="Explora el catálogo de proyectos desarrollados por MOLE-CODE: soluciones de software a la medida, aplicaciones móviles y sistemas ERP personalizados.">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/new.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" height="55">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#servicios">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="proyectos.html"
+                            style="color: #2563eb !important; font-weight: 600;">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#nosotros">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-contacto" href="index.html#contacto">
+                            Contactar
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO DE CATÁLOGO -->
+    <section class="catalog-header">
+        <div class="container">
+            <h1 class="wow fadeInDown" data-wow-delay="0.2s">Catálogo de Proyectos</h1>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">
+                Explora las soluciones tecnológicas e innovaciones de software desarrolladas a la medida para potenciar
+                el crecimiento y optimizar el rendimiento de nuestros clientes en múltiples sectores.
+            </p>
+        </div>
+    </section>
+
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumb-container">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Proyectos</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- SECCIÓN FILTROS Y PROYECTOS -->
+    <section class="projects" style="background-color: #f8fafc;">
+        <div class="container">
+
+            <!-- Botones de Filtrado -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="catalog-filters wow fadeInUp" data-wow-delay="0.2s">
+                        <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
+                        <button class="filter-btn" data-filter="web">Desarrollo Web / APIs</button>
+                        <button class="filter-btn" data-filter="mobile">Aplicaciones Móviles</button>
+                        <button class="filter-btn" data-filter="systems">Sistemas de Gestión / ERP</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Listado de Tarjetas -->
+            <div class="row">
+
+                <!-- Proyecto 1: Solved Promoter -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="mobile web">
+                    <div class="project-card h-100 wow fadeInUp" data-wow-delay="0.1s">
+                        <div id="carouselPromoter" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselPromoter" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselPromoter" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/promoter1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Alta de Producto y Administración">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/promoter2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Panel del Repartidor / Mensajero">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/promoter3.png" class="d-block w-100 project-carousel-img"
+                                        alt="Catálogo de Productos en App Móvil">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/promoter4.jpg" class="d-block w-100 project-carousel-img"
+                                        alt="Ranking de Promotores con más Ventas e Informes">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselPromoter" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselPromoter" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                        <div class="project-content d-flex flex-column justify-content-between h-100"
+                            style="min-height: 480px;">
+                            <div>
+                                <span class="d-block text-muted small mb-2"><i class="fa-solid fa-mobile-screen"></i>
+                                    Móvil & Web</span>
+                                <h4>Solved-Promoter</h4>
+
+                                <div class="my-3">
+                                    <span class="tech-badge">Android</span>
+                                    <span class="tech-badge">Laravel API</span>
+                                    <span class="tech-badge">GPS Tracking</span>
+                                    <span class="tech-badge">Vue.js</span>
+                                </div>
+
+                                <p class="text-secondary" style="font-size: 14.5px; line-height: 1.6;">
+                                    Solución de software integral para la administración y control de la fuerza de
+                                    ventas. Permite coordinar centralizadamente a promotores de ventas y mensajeros en
+                                    campo, registrando cada transacción por medio de tickets de venta en tiempo real.
+                                    Cuenta con un completo sistema para el control de productos en almacén (inventario
+                                    físico de entrada y merma) y a la venta (stock disponible en catálogo), facilitando
+                                    la supervisión operativa y la liquidación de pagos.
+                                </p>
+
+                                <hr>
+
+                                <ul style="padding-left: 0; list-style: none; font-size: 14px; color: #475569;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Gestión y control de vendedores por tickets de venta</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Administración de productos en almacén e inventario a la venta</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Control operativo y de rutas para mensajeros y promotores</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Módulo de liquidaciones, pagos y ranking de ventas</li>
+                                </ul>
+                            </div>
+
+                            <a href="index.html#contacto" class="btn btn-contacto btn-block text-center mt-4">
+                                Consultar sobre esta solución
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Solved Facturación -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web systems">
+                    <div class="project-card h-100 wow fadeInUp" data-wow-delay="0.2s">
+                        <div id="carouselFacturacion" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselFacturacion" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselFacturacion" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/facturacion1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Solved Facturación - Alta y Gestión de Productos en Almacén">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/facturacion2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Solved Facturación - Registro de Ventas y Facturación">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselFacturacion" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselFacturacion" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                        <div class="project-content d-flex flex-column justify-content-between h-100"
+                            style="min-height: 480px;">
+                            <div>
+                                <span class="d-block text-muted small mb-2"><i class="fa-solid fa-gears"></i> Sistemas /
+                                    ERP</span>
+                                <h4>Solved-Facturación</h4>
+
+                                <div class="my-3">
+                                    <span class="tech-badge">Laravel</span>
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">Bootstrap 4</span>
+                                </div>
+
+                                <p class="text-secondary" style="font-size: 14.5px; line-height: 1.6;">
+                                    Sistema integral para la administración empresarial que automatiza el control de
+                                    inventarios, las órdenes de producción por lotes, la logística de distribución de
+                                    productos y la emisión de facturación electrónica conforme a regulaciones vigentes.
+                                </p>
+
+                                <hr>
+
+                                <ul style="padding-left: 0; list-style: none; font-size: 14px; color: #475569;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Control
+                                        de existencias e inventario mínimo</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Órdenes
+                                        de producción y materias primas</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Facturación y compras automatizadas</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Despacho
+                                        y planificación de rutas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Aplicaciones Mamey -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="mobile">
+                    <div class="project-card h-100 wow fadeInUp" data-wow-delay="0.3s">
+                        <div id="carouselMamey" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselMamey" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselMamey" data-slide-to="1"></li>
+                                <li data-target="#carouselMamey" data-slide-to="2"></li>
+                                <li data-target="#carouselMamey" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/mamey1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Casillero Virtual Express de Envíos">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/mamey2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Envío de Paquetería y Cálculo de Costos">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/mamey3.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Panel para Agregar Reservas y Aduana">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/mamey4.png" class="d-block w-100 project-carousel-img"
+                                        alt="Matules - Listado y Tabla Control de Reservas">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselMamey" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselMamey" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                        <div class="project-content d-flex flex-column justify-content-between h-100"
+                            style="min-height: 480px;">
+                            <div>
+                                <span class="d-block text-muted small mb-2"><i class="fa-solid fa-truck-ramp-box"></i>
+                                    Móvil & Logística</span>
+                                <h4>Aplicaciones Matules</h4>
+
+                                <div class="my-3">
+                                    <span class="tech-badge">Cakephp</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">APIs Rest</span>
+                                    <span class="tech-badge">Google Maps API</span>
+                                </div>
+
+                                <p class="text-secondary" style="font-size: 14.5px; line-height: 1.6;">
+                                    Ecosistema tecnológico integral desarrollado para optimizar la cadena operativa de
+                                    transporte de mercancías internacional. Permite el control riguroso de paquetes y
+                                    bultos en tránsito, la gestión y actualización en tiempo real de los estados de
+                                    envío para la tranquilidad y consulta directa del cliente, y la generación
+                                    automática de reportes y manifiestos de carga listos para ser presentados ante las
+                                    aduanas de los distintos países donde opera la compañía.Ademas de contar con un
+                                    completo modulo de Facturación
+                                </p>
+
+                                <hr>
+
+                                <ul style="padding-left: 0; list-style: none; font-size: 14px; color: #475569;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Control y rastreo de paquetes en tránsito internacional</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Gestión de estados de envío para transparencia con el cliente</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Generación de reportes entregables listos para aduanas</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Soporte offline para operarios de campo y mensajería</li>
+                                </ul>
+                            </div>
+
+                            <a href="index.html#contacto" class="btn btn-contacto btn-block text-center mt-4">
+                                Consultar sobre esta solución
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: Mi Pokemon -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web">
+                    <div class="project-card h-100 wow fadeInUp" data-wow-delay="0.4s">
+                        <div id="carouselPokemon" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselPokemon" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselPokemon" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/pokemon1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Mi Pokemon - Intercambio y Consulta de Cartas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/Pokemon2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Mi Pokemon - Panel de Venta de Cartas Coleccionables">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselPokemon" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselPokemon" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                        <div class="project-content d-flex flex-column justify-content-between h-100"
+                            style="min-height: 480px;">
+                            <div>
+                                <span class="d-block text-muted small mb-2"><i class="fa-solid fa-gamepad"></i>
+                                    Entretenimiento & Web</span>
+                                <h4>Mi Pokemon</h4>
+
+                                <div class="my-3">
+                                    <span class="tech-badge">CakePHP</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">Vue.js</span>
+                                    <span class="tech-badge">APIs Integration</span>
+                                </div>
+
+                                <p class="text-secondary" style="font-size: 14.5px; line-height: 1.6;">
+                                    Plataforma web especializada en la comunidad de cartas coleccionables Pokémon (TCG).
+                                    Permite a los coleccionistas consultar precios actualizados del mercado, gestionar
+                                    inventarios de cartas, realizar ofertas de intercambio seguras y comprar o vender
+                                    cartas directamente entre usuarios con total transparencia.
+                                </p>
+
+                                <hr>
+
+                                <ul style="padding-left: 0; list-style: none; font-size: 14px; color: #475569;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Consulta
+                                        y cotización de precios de cartas en tiempo real</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Marketplace para compra y venta directa entre usuarios</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Módulo
+                                        de intercambio seguro y control de ofertas</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Panel de
+                                        control interactivo desarrollado en Vue.js</li>
+                                </ul>
+                            </div>
+
+                            <a href="index.html#contacto" class="btn btn-contacto btn-block text-center mt-4">
+                                Consultar sobre esta solución
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: Colección Deportiva -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web">
+                    <div class="project-card h-100 wow fadeInUp" data-wow-delay="0.5s">
+                        <div id="carouselDeportiva" class="carousel slide" data-ride="carousel" data-interval="4000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselDeportiva" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselDeportiva" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/dos/deportes1.png" class="d-block w-100 project-carousel-img"
+                                        alt="Colección Deportiva - Gestión y Control de Cromos en Inventario">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/dos/deportes2.png" class="d-block w-100 project-carousel-img"
+                                        alt="Colección Deportiva - Intercambio Inteligente y Ofertas de Cromos">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselDeportiva" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselDeportiva" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                        <div class="project-content d-flex flex-column justify-content-between h-100"
+                            style="min-height: 480px;">
+                            <div>
+                                <span class="d-block text-muted small mb-2"><i class="fa-solid fa-trophy"></i> Deportes
+                                    & Web</span>
+                                <h4>Colección Deportiva</h4>
+
+                                <div class="my-3">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                    <span class="tech-badge">HTML /CSS</span>
+                                    <span class="tech-badge">APIs Integration</span>
+                                    <span class="tech-badge">Django</span>
+                                    <span class="tech-badge">VUE JS</span>
+                                </div>
+
+                                <p class="text-secondary" style="font-size: 14.5px; line-height: 1.6;">
+                                    Plataforma web diseñada para coleccionistas de cromos deportivos (fútbol,
+                                    baloncesto, béisbol y más). Permite registrar álbumes virtuales completo, llevar el
+                                    control de cromos repetidos y faltantes, cotizar el valor de mercado en tiempo real,
+                                    y gestionar ofertas de intercambio inteligentes y seguras directamente con otros
+                                    coleccionistas.
+                                </p>
+
+                                <hr>
+
+                                <ul style="padding-left: 0; list-style: none; font-size: 14px; color: #475569;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Gestión
+                                        de álbumes virtuales y control de cromos repetidos/faltantes</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i>
+                                        Valuación y cotización histórica de cromos coleccionables</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Ofertas
+                                        automáticas de intercambio directo entre usuarios</li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-primary mr-2"></i> Panel de
+                                        control responsivo desarrollado en Vue.js</li>
+                                </ul>
+                            </div>
+
+                            <a href="index.html#contacto" class="btn btn-contacto btn-block text-center mt-4">
+                                Consultar sobre esta solución
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN LLAMADA A LA ACCIÓN (CTA) -->
+    <section class="cta-section text-center">
+        <div class="container wow fadeInUp" data-wow-delay="0.2s">
+            <h2>¿Tienes un proyecto o sistema a la medida en mente?</h2>
+            <p>
+                Estamos listos para transformar tus necesidades operativas en herramientas de software eficientes y
+                escalables. Contáctanos para una asesoría sin costo.
+            </p>
+            <a href="index.html#contacto" class="btn btn-primary-custom"
+                style="padding: 15px 35px; border-radius: 12px; display: inline-block;">
+                Iniciar una consulta gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <h4>MOLE-CODE</h4>
+
+                    <p>
+                        Soluciones tecnológicas para empresas modernas.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h4>Contacto</h4>
+                    <a href="https://wa.me/529984804149" target="_blank" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <p>
+                        <i class="fa fa-whatsapp"></i>
+                        +52 998 480 4149
+                    </p>
+
+                    <p>
+                        <i class="fa fa-envelope"></i>
+                        contacto@mole-code.com
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h4>Tecnologías</h4>
+
+                    <p>
+                        PHP · Python · JavaScript · Laravel · CakePHP
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                © 2026 MOLE-CODE. Todos los derechos reservados.
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--=========== js section ===========-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- wow animation -->
+    <script src="js/wow.js"></script>
+
+    <script>
+        // Inicializar WOW.js para animaciones de carga
+        new WOW().init();
+
+        // Control de barra de navegación dinámica al hacer scroll
+        window.addEventListener("scroll", function () {
+            let navbar = document.querySelector(".custom-navbar");
+            if (window.scrollY > 80) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        // Filtrado Interactivo de Proyectos
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover clase active de todos los botones
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Agregar clase active al botón clicado
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    const categories = item.getAttribute('data-category').split(' ');
+
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        // Mostrar elemento
+                        item.classList.remove('hidden');
+
+                        // Añadir una animación suave al mostrar
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(15px)';
+                        setTimeout(() => {
+                            item.style.transition = 'all 0.4s ease';
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        // Ocultar elemento
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Lógica interactiva para ampliar imágenes (Lightbox)
+        const lightboxModal = $('#imageLightboxModal');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+
+        document.querySelectorAll('.project-carousel-img').forEach(img => {
+            img.addEventListener('click', function () {
+                const src = this.getAttribute('src');
+                const alt = this.getAttribute('alt');
+                lightboxImage.setAttribute('src', src);
+                lightboxCaption.textContent = alt;
+                lightboxModal.modal('show');
+            });
+        });
+    </script>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="imageLightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+                <div class="modal-header" style="border: none; padding: 0;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        style="color: white; font-size: 35px; opacity: 0.8; position: absolute; right: 10px; top: -45px; z-index: 9999; border: none; background: transparent; cursor: pointer;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img id="lightboxImage" src="" class="img-fluid"
+                        style="max-height: 80vh; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); background-color: white; padding: 5px;">
+                    <div id="lightboxCaption" class="text-white mt-3 font-weight-medium"
+                        style="text-shadow: 0 2px 4px rgba(0,0,0,0.8); font-size: 16px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
